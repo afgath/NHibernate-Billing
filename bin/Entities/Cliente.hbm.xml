@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2">
+  <class name="InvoiceServices.Logic.Classes.Cliente, InvoiceServices.Logic" table="Cliente">
+    <id name="Id" column="ClienteId" type="Int32">
+      <generator class="native"/>
+    </id>
+    <property name="Cedula" column="ClienteCedula" type="Int32"/>
+    <property name="Nombre" column="ClienteNombre" type="String" length="50"/>
+    <property name="Direccion" column="ClienteDireccion" type="String" length="100"/>
+    <property name="Telefono" column="ClienteTelefono" type="Int32"/>
+  </class>
+</hibernate-mapping>
